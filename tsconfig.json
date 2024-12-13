@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    // Specify the ECMAScript target version
+    "target": "ES2020",
+
+    // Define the module system to use
+    "module": "CommonJS",
+
+    // Set the root directory for input files
+    "rootDir": "./src",
+
+    // Set the base directory for module resolution
+    "baseUrl": "./src",
+
+    // Specify the output directory for compiled files
+    "outDir": "./dist",
+
+    // Allow default imports from non-ES modules
+    "esModuleInterop": true,
+
+    // Enable strict type-checking options
+    "strict": true,
+
+    // Specify the module resolution strategy
+    "moduleResolution": "node",
+
+    // Allow importing JSON files as modules
+    "resolveJsonModule": true,
+
+    // Define path mapping for modules
+    "paths": {
+      "*": ["*", "*/index"]
+    }
+  },
+
+  // Include all TypeScript source files
+  "include": ["src/**/*"],
+
+  // Exclude unnecessary files and directories
+  "exclude": ["node_modules", "dist"]
+}
